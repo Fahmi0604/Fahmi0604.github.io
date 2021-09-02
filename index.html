@@ -16,9 +16,9 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><img src="assets/img/dog.svg" alt="icon"></li>
-                <li><a href="#">Beranda</a></li>
+            <img src="assets/img/dog.svg" alt="icon">
+            <ul class="ul-menu">
+                <li><a class="link-menu" href="#">Beranda</a></li>
                 <li>
                     <div class="product-dropdown">
                         <button class="p-dropbtn">Produk</button>
@@ -29,12 +29,24 @@
                         </div>
                     </div> 
                 </li>
-                <li><a href="#about">Tentang</a></li>
+
+                <li><a class="link-menu" href="#aksesoris">Makanan</a></li>
+                <li><a class="link-menu" href="#produk">Mainan</a></li>
+                <li><a class="link-menu" href="#aksesoris">Aksesoris</a></li>
+
+                <li><a class="link-menu" href="#about">Tentang</a></li>
+                <li>
+                    <div id="search-box">
+                        <img src="assets/img/loupe.svg" alt="">
+                        <input type="text" placeholder="Mencari apa ?">
+                    </div>
+                </li>
                 <!-- <li><a href="#"><img src="assets/img/shopping-cart.svg" alt=""></a></li> -->
             </ul>
-            <div id="search-box">
-                <img src="assets/img/loupe.svg" alt="">
-                <input type="text" placeholder="Mencari apa ?">
+            <div class="btn-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>  
         </nav>
     </header>
@@ -159,6 +171,8 @@
         <p>Copyright ©2021 All rights reserved | This template is made with ❤️ by Fahmi</p>
     </footer>
 </body>
+
+<script src="assets/js/script.js"></script>
 <script>
     function beliBarang() {
         alert("Terima kasih sudah membeli di toko kami");
