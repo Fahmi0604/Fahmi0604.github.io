@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif/png" href="assets/img/img-titlebar.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="assets/img/dog.svg" alt="icon"></li>
+                <li><a href="#">Beranda</a></li>
+                <li>
+                    <div class="product-dropdown">
+                        <button class="p-dropbtn">Produk</button>
+                        <div class="p-dropdown-content">
+                        <a href="#aksesoris">Makanan</a>
+                        <a href="#produk">Mainan</a>
+                        <a href="#aksesoris">Aksesoris</a>
+                        </div>
+                    </div> 
+                </li>
+                <li><a href="#about">Tentang</a></li>
+                <!-- <li><a href="#"><img src="assets/img/shopping-cart.svg" alt=""></a></li> -->
+            </ul>
+            <div id="search-box">
+                <img src="assets/img/loupe.svg" alt="">
+                <input type="text" placeholder="Mencari apa ?">
+            </div>  
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="banner">
+                <figure>
+                    <img src="assets/img/banner.jpeg"
+                    alt="banner">
+                    <figcaption>Let's make our pets happy</figcaption>
+                </figure>
+            </article>
+            <article id="produk">
+                <div id="title-p">
+                    <h2>Produk Baru</h2>
+                    <p><a href="#">lihat semua</a></p>
+                </div>
+                <!-- <p>Temukan berbagai pilihan makanan dan aksesoris terbaik untuk peliharaan anda</p> -->
+                <div class="card-p">
+                    <section id="card-1">
+                        <img src="assets/img/newproduct-1.jpeg"
+                            alt="produk">
+                        <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        <h4>OurPets® Catty Whack™ Electronic Cat Toy</h4>
+                        <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-2">
+                        <img src="assets/img/newproduct-2.jpeg"
+                            alt="produk">
+                            <p>&#9733;&#9733;&#9734;&#9734;&#9734;</p>
+                        <h4>Ball Track & Swatter Cat Toy</h4>
+                        <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-3">
+                        <img src="assets/img/newproduct-3.jpeg"
+                            alt="produk">
+                            <p>&#9733;&#9734;&#9734;&#9734;&#9734;</p>
+                        <h4>Charities "Journey" Plush Whale - Squeaker</h4>
+                        <button onclick="beliBarang()">Beli</button>
+                    </section>
+                </div>
+                <div class="card-p" id="aksesoris">
+                    <section id="card-4">
+                        <img src="assets/img/newproduct-4.jpeg"
+                            alt="produk">
+                            <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <h4>Cat litter Disposal system</h4>
+                        <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-5">
+                        <img src="assets/img/newproduct-5.jpeg"
+                            alt="produk">
+                            <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                        <h4>Fancy Feast food toppers</h4>
+                        <button onclick="beliBarang()">Beli</button>
+                    </section>
+                </div>
+            </article>
+            <article id="about">
+                <img src="assets/img/about-img.jpeg" alt="about-img">
+                <section>
+                    <h2>Tentang kami</h2>
+                    <p>Kami menyediakan brand lokal dan internasional yang terus bertambah untuk PetLovers di seluruh Indonesia.
+                        Kami memiliki lebih dari 5.000 produk yg dapat memenuhi kebutuhan hewan peliharaan kesayangan Anda 
+                        dengan menawarkan berbagai produk pilihan dari berbagai kategori, mulai dari makanan, vitamin dan 
+                        obat-obatan, mainan, aksesoris, baju, kandang, dan masih banyak lagi.</p>
+                </section>
+            </article>
+        </div>
+        <aside>
+            <article>
+                <h2>
+                    My Profile
+                </h2>
+                <img src="assets//img/photo.png" alt="foto">
+                <p>
+                    Perkenalkan nama saya Fahmi Firmansyah
+                    saya seorang mahasiswa jurusan Teknologi Informasi dari kampus Politeknik Negeri Malang 
+                    yang memiliki ambisi untuk membuat startup sendiri.
+                </p>
+            </article>
+            <article id="best-seller">
+                <h2>
+                    Produk terlaris
+                </h2>
+                <div id="card-parent">
+                    <section id="card-6">
+                        <img src="assets/img/bestseller-1.jpeg"
+                        alt="best-seller">
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h4>Hill's® Science Diet® Cat Food</h4>
+                    <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-7">
+                        <img src="assets/img/bestseller-2.jpeg"
+                        alt="best-seller">
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h4>Royal Canin® Cat Food</h4>
+                    <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-8">
+                        <img src="assets/img/bestseller-3.jpeg"
+                        alt="best-seller">
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h4>Top Paw® Dog Bed</h4>
+                    <button onclick="beliBarang()">Beli</button>
+                    </section>
+                    <section id="card-9">
+                        <img src="assets/img/bestseller-4.jpeg"
+                        alt="best-seller">
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h4>Blue Buffalo Wilderness Dog Treats</h4>
+                    <button onclick="beliBarang()">Beli</button>
+                    </section>
+                </div>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <h1>Contact us</h1>
+        <h3>petshop@gmail.com</h3>
+        <p>Copyright ©2021 All rights reserved | This template is made with ❤️ by Fahmi</p>
+    </footer>
+</body>
+<script>
+    function beliBarang() {
+        alert("Terima kasih sudah membeli di toko kami");
+    }
+</script>
+</html>
